@@ -758,7 +758,262 @@
 <p>如果BIOS無法識別硬碟或無法加載操作系統，則可能是硬碟出現故障。聽一下硬碟的聲音；您聽到機械的喀噠聲嗎？如果是這樣，您的硬碟可能會發生故障，應盡快更換。如果您沒有聽到任何咔嗒聲，則可能是磁碟上的磁區損壞，請執行磁碟維護過程，例如“檢查磁碟”（CHKDSK）或“磁碟碎片整理”（DISK DEFRAG）。</p>
 <h1>HW2</h1>
 <h1>HW3</h1>
-<p></p>
-<p></p>
+<h2>Exercise 5</h2>
+<p><span>Take two lists, say for example these two:</span></p>
+<p>清單重疊</p>
+<p>練習<span>5</span>（和解決方案）</p>
+<p>拿兩個列表，舉例來說，這兩個：</p>
+<p>  a <strong>=</strong> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]</p>
+<p>  b <strong>=</strong> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]</p>
+<p>and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.</p>
+<p>Extras:</p>
+<ol>
+<li>Randomly generate two lists to test this</li>
+<li>Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)</li>
+</ol>
+<p>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。 確保您的程序可以在兩個不同大小的列表上運行。</p>
+<p><span> </span></p>
+<p>附加功能：</p>
+<p><span> </span></p>
+<p><span>1.</span>隨機生成兩個列表進行測試</p>
+<p><span>2.</span>用<span>Python</span>編寫一行代碼（不要擔心，如果您現在不能解決這個問題，我們會盡快解決）</p>
+<p><strong>List properties</strong></p>
+<p>In other words, “things you can do with lists.”</p>
+<p>One of the interesting things you can do with lists in Python is figure out whether something is inside the list or not. For example:</p>
+<p>列出屬性</p>
+<p>換句話說，“您可以使用列表執行的操作”。</p>
+<p><span> </span></p>
+<p>您可以使用<span>Python</span>中的列表執行的有趣操作之一是確定列表中是否包含某些內容。 例如：</p>
+<p><span> </span></p>
+<p>  &gt;&gt;&gt; a = [5, 10, 15, 20]</p>
+<p>  &gt;&gt;&gt; 10 in a</p>
+<p>  True</p>
+<p>  &gt;&gt;&gt; 3 in a</p>
+<p>  False</p>
+<p>You can of course use this in loops, conditionals, and any other programming constructs.</p>
+<p>您當然可以在循環，條件和任何其他編程構造中使用它。</p>
+<p>  list_of_students <strong>=</strong> ["Michele", "Sara", "Cassie"]</p>
+<p> </p>
+<p>  name <strong>=</strong> input("Type name to check: ")</p>
+<p>  <strong>if</strong> name <strong>in</strong> list_of_students:</p>
+<p>    <strong>print</strong>("This student is enrolled.")</p>
+<h2><span>Exercise 17</span></h2>
 </div>
+<div class="sectionContain"></div>
+<p>Decode A Web Page       </p>
+<p>This is the first 4-chili exercise of this blog! We’ll see what people think, and decide whether or not to continue with 4-chili exercises in the future.</p>
+<p>解碼網頁</p>
+<p>這是此博客的第一個<span>4</span>辣椒練習！ 我們將了解人們的想法，並決定將來是否繼續進行<span>4</span>辣椒練習。</p>
+<p>Exercise 17 (and <a href="https://www.practicepython.org/solution/2014/07/10/17-decode-a-web-page-solutions.html">Solution</a>)</p>
+<p>Use the BeautifulSoup and requests Python packages to print out a list of all the article titles on the <a href="http://www.nytimes.com/">New York Times homepage</a>.</p>
+<p>練習<span>17</span>（和解決方案）</p>
+<p>使用<span>BeautifulSoup</span>並請求<span>Python</span>程序包在《紐約時報》首頁上打印所有文章標題的列表。</p>
+<p><strong>Discussion</strong></p>
+<p>Concepts for this week:</p>
+<ul>
+<li>Libraries</li>
+<li>requests</li>
+<li>BeautifulSoup</li>
+</ul>
+<p>討論區</p>
+<p>本週的概念：</p>
+<p><span> </span></p>
+<p><span>   </span>圖書館</p>
+<p><span>   </span>要求</p>
+<p><span>   </span>美麗湯</p>
+<p><strong>Libraries</strong></p>
+<p>Many people have written libraries in Python that do not come with the standard distribution of Python (like the random library mentioned <a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">in a previous post</a>). These libraries can do anything from machine learning to date and time formatting to meme generation. If you have a task you need done, most likely someone has written a library for it.</p>
+<p>There are three main things to keep in mind when using a library:</p>
+<ol>
+<li>You need to install it. Installation in GNU/Linux based systems will generally be easier than on Windows or OSX, but there will always be documentation for how to do it.</li>
+<li>You need to import it. At the top of your program, make sure you write the line import requests, or whatever the name of your library is. Then you can use it to your heart’s content.</li>
+<li>You need to read documentation. Someone else wrote it, so the rules might not be so obvious. Anyone (or any group) that writes a Python package writes documentation for it. Eventually, reading documentation will become second nature.</li>
+</ol>
+<p>圖書館</p>
+<p>許多人都使用<span>Python</span>編寫了一些庫，這些庫不是<span>Python</span>的標準發行版所附帶的（例如前一篇文章中提到的隨機庫）。這些庫可以執行從機器學習到日期和時間格式化到模因生成的所有操作。如果您有需要完成的任務，很可能有人為它編寫了一個庫。</p>
+<p><span> </span></p>
+<p>使用庫時，要牢記三件事：</p>
+<p><span> </span></p>
+<p><span>1.</span>您需要安裝它。與基於<span>Windows</span>或<span>OSX</span>的系統相比，在基於<span>GNU / Linux</span>的系<span>          </span>統上的安裝通常會更容易，但是始終會有有關如何執行此操作的文檔。</p>
+<p><span>2.</span>您需要導入它。在程序的頂部，請確保您編寫了行導入請求，或者您的庫名稱<span>   </span>是什麼。然後，您可以使用它來滿足您的需求。</p>
+<p><span>3.</span>您需要閱讀文檔。有人寫的，所以規則可能不那麼明顯。編寫<span>Python</span>程序包的任何人（或任何小組）都會為其編寫文檔。最終，閱讀文檔將成為第二天性。</p>
+<p><strong>Requests</strong></p>
+<p>One of the most useful libraries written for Python recently, <a href="http://docs.python-requests.org/en/latest/">requests</a> does “HTTP for humans.” What this means in laymen’s terms is that it asks the internet things from Python. When you type “<a href="http://facebook.com/">facebook.com</a>” into the browser, you are asking the internet to show you Facebook’s homepage.</p>
+<p>In the same way, a program can ask the internet something. It might not be “show me Facebook”, but you can for example ask Github for a list of all the repositories that the user “mprat” has. You can do this with an API (Application Programming Interface). This exercise doesn’t use APIs, so we’ll talk more about those in a later post.</p>
+<p>Back to showing the user a webpage. When I type “<a href="http://facebook.com/">facebook.com</a>” into the browser, Facebook sends my browser a bunch of HTML (basically, code for how the website looks). The browser then takes this HTML and shows it to me in a pretty way. (Fun fact: to see the HTML of any page in a browser, right click on the page and “Inspect Element” or “View Source” depending on your browser. In Chrome, “Inspect Element” will pop up a module at the bottom of your page where you can see the HTML from the page. This trick will come in handy when you’re doing the exercise. If you need to DO anything with this HTML, better to use a program. More posts about this coming later.) If I want to “see” a webpage with a program, all I need to do is ask it for it’s HTML and read it.</p>
+<p>The ‘requests’ library does half of that job: it asks (requests, if you will) a server for information. This could be just data (through an API - more later) or in the case of this exercise, HTML.</p>
+<p>Look at the <a href="http://docs.python-requests.org/en/latest/">documentation</a> for all the details you need. In this particular latest version, all you need to do to ask a website for it’s HTML is:</p>
+<p>  <span>import</span> <span>requests</span>  <span>url</span> <span><strong>=</strong></span> <span>'<a href="http://github.com/">http://github.com</a>'</span>  <span>r</span> <span><strong>=</strong></span> <span>requests</span><span><strong>.</strong></span><span>get</span><span>(</span><span>url</span><span>)</span>  <span>r_html</span> <span><strong>=</strong></span> <span>r</span><span><strong>.</strong></span><span>text</span></p>
+<p>Now inside the variable r_html, you have the HTML of the page as a string. Reading (otherwise called <strong>parsing</strong>) happens with a different Python package.</p>
+<p>要求</p>
+<p>最近為<span>Python</span>編寫的最有用的庫之一，請求執行“人類<span>HTTP</span>”。用外行的話來說，這意味著它向<span>Python</span>詢問互聯網問題。在瀏覽器中輸入“<span> facebook.com</span>”時，您是在要求互聯網顯示<span>Facebook</span>主頁。</p>
+<p><span> </span></p>
+<p>同樣，程序可以向互聯網詢問一些信息。它可能不是“向我顯示<span>Facebook”</span>，但是例如，您可以要求<span>Github</span>提供用戶“<span> mprat”</span>擁有的所有存儲庫的列表。您可以使用<span>API</span>（應用程序編程接口）來執行此操作。本練習不使用<span>API</span>，因此我們將在以後的文章中進一步討論。</p>
+<p><span> </span></p>
+<p>返迴向用戶顯示網頁。當我在瀏覽器中鍵入“<span> facebook.com</span>”時，<span>Facebook</span>向我的瀏覽器發送了一堆<span>HTML</span>（基本上是網站外觀的代碼）。然後瀏覽器將這個<span>HTML</span>並以漂亮的方式顯示給我。 （有趣的事實：要在瀏覽器中查看任何頁面的<span>HTML</span>，請右鍵單擊該頁面，然後根據您的瀏覽器單擊“檢查元素”或“查看源代碼”。在<span>Chrome</span>中，“檢查元素”將在底部彈出一個模塊您可以在頁面的其中看到<span>HTML</span>。如果您需要使用此<span>HTML</span>做任何事情，最好使用一個程序。 ）如果我想“查看”帶有程序的網頁，我所要做的就是向其索要<span>HTML</span>並閱讀它。</p>
+<p><span> </span></p>
+<p>“請求”庫完成了一半工作：它向服務器請求（如果需要的話）信息。這可能只是數據（通過<span>API-</span>稍後介紹），或者在本練習中為<span>HTML</span>。</p>
+<p><span> </span></p>
+<p>查看文檔以獲取所需的所有詳細信息。在此特定的最新版本中，向網站詢問其<span>HTML</span>所需要做的就是：</p>
+<p><span> </span></p>
+<p><span>  </span>匯入要求</p>
+<p><span>  url ='http://github.com'</span></p>
+<p><span>  r = request.get</span>（<span>URL</span>）</p>
+<p><span>  r_html = r.text</span></p>
+<p>現在，在變量<span>r_html</span>中，您將頁面的<span>HTML</span>作為字符串。讀取（否則稱為解析）發生在其他<span>Python</span>包中。</p>
+<p><strong>BeautifulSoup</strong></p>
+<p>To solve our problem of parsing (reading, understanding, interpreting) the string of HTML we got from requests, we use the <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a> library.</p>
+<p>What it does is give a <em>hierarchical</em> (a pyramid structure) to the HTML in the document. If you don’t know anything about HTML, the <a href="http://en.wikipedia.org/wiki/HTML">Wikipedia</a> article is a good summary. For the purposes of this exercise, you don’t need to know anything about HTML beyond being able to look at it quickly.</p>
+<p>Because BeautifulSoup takes care of interpreting our HTML for us, we can ask it things like: “give me all the lines with &lt;p&gt; tags” or “find me the parent element to the &lt;title&gt; element”, etc.</p>
+<p>Your code would look something like this:</p>
+<p>  <span>from</span> <span>bs4</span> <span>import</span> <span>BeautifulSoup</span>   <span><em># some requests code here for getting r_html </em></span>   <span>soup</span> <span><strong>=</strong></span> <span>BeautifulSoup</span><span>(</span><span>r_html</span><span>)</span>  <span>title</span> <span><strong>=</strong></span> <span>soup</span><span><strong>.</strong></span><span>find</span><span>(</span><span>'span'</span><span>,</span> <span>'articletitle'</span><span>)</span><span><strong>.</strong></span><span>string</span></p>
+<p>And you can do many more things in BeautifulSoup, but I will leave you to explore those by yourself or through other later exercises.</p>
+<p>美麗湯</p>
+<p>為了解決解析（讀取，理解，解釋）從請求中獲得的<span>HTML</span>字符串的問題，我們使用<span>BeautifulSoup</span>庫。</p>
+<p><span> </span></p>
+<p>它的作用是為文檔中的<span>HTML</span>提供分層結構（金字塔結構）。 如果您對<span>HTML</span>一無所知，請參閱<span>Wikipedia</span>文章。 在本練習中，除了能夠快速查看<span>HTML</span>外，您不需要了解其他任何有關<span>HTML</span>的知識。</p>
+<p><span> </span></p>
+<p>因為<span>BeautifulSoup</span>負責為我們解釋<span>HTML</span>，所以我們可以提出類似的要求：“給我所有帶有<span>&lt;p&gt;</span>標籤的行”或“為父元素找到<span>&lt;title&gt;</span>元素”，等等。</p>
+<p><span> </span></p>
+<p>您的代碼如下所示：</p>
+<p><span> </span></p>
+<p><span>   </span>從<span>bs4</span>導入<span>BeautifulSoup</span></p>
+<p><span> </span></p>
+<p><span>   </span>＃一些請求代碼在這裡獲取<span>r_html</span></p>
+<p><span> </span></p>
+<p><span>   </span>湯<span>= BeautifulSoup</span>（<span>r_html</span>）</p>
+<p><span>   </span>標題<span>= soup.find</span>（<span>'span'</span>，<span>'articletitle'</span>）。<span>string</span></p>
+<p>您可以在<span>BeautifulSoup</span>中做更多的事情，但是我將讓您自己或通過其他後續練習來探索這些內容。</p>
+<p></p>
+<h2><span>Exercise 18</span></h2>
+<p><strong>Cows And Bulls </strong><strong> </strong><strong> </strong></p>
+<p><strong>Exercise 18 (and </strong><span><a href="https://www.practicepython.org/solution/2014/07/18/18-cows-and-bulls-solutions.html"><strong>Solution</strong></a></span><strong>)</strong></p>
+<p>Create a program that will play the “cows and bulls” game with the user. The game works like this:</p>
+<p>Randomly generate a 4-digit number. Ask the user to guess a 4-digit number. For every digit that the user guessed correctly <em>in the correct place</em>, they have a “cow”. For every digit the user guessed correctly <em>in the wrong place</em> is a “bull.” Every time the user makes a guess, tell them how many “cows” and “bulls” they have. Once the user guesses the correct number, the game is over. Keep track of the number of guesses the user makes throughout teh game and tell the user at the end.</p>
+<p>Say the number generated by the computer is 1038. An example interaction could look like this:</p>
+<p><span> </span></p>
+<p>牛和公牛</p>
+<p>練習<span>18</span>（和解決方案）</p>
+<p>創建一個程序，將與用戶一起玩“牛與牛”遊戲。 遊戲的工作原理如下：</p>
+<p><span> </span></p>
+<p>隨機生成一個<span>4</span>位數字。 要求用戶猜測一個<span>4</span>位數字。 對於用戶在正確位置正確猜到的每個數字，他們都有一個“牛”。 用戶在錯誤的位置正確猜出的每個數字都是“牛”。 每次用戶猜測時，告訴他們他們有多少“牛”和“牛”。 一旦用戶猜出正確的數字，遊戲就結束了。 跟踪用戶在整個遊戲中所做的猜測數量，並在最後告訴用戶。</p>
+<p><span> </span></p>
+<p>假設計算機生成的數字是<span>1038</span>。交互示例如下所示：</p>
+<p>  Welcome to the Cows and Bulls Game!</p>
+<p>  Enter a number:</p>
+<p>  &gt;&gt;&gt; 1234</p>
+<p>  2 cows, 0 bulls</p>
+<p>  &gt;&gt;&gt; 1256</p>
+<p>  1 cow, 1 bull</p>
+<p>  ...</p>
+<p>Until the user guesses the number.</p>
+<p>直到用戶猜出數字。</p>
+<p><strong>Concepts for this week:</strong></p>
+<ol>
+<li>Randomness (we’ve covered this a few times before. Mainly in <span><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">a previous exercise</a></span>.)</li>
+<li>Functions (covered in a <span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">previous exercise</a></span>also)</li>
+<li>Main method</li>
+</ol>
+<p><strong>Main method</strong></p>
+<p>Since we have covered randomness and functions, we still need to cover the idea of a “main” method. If you have programmed before, you will wonder why you haven’t needed a main method so far in your Python code.</p>
+<p>First, here is how you do it:</p>
+<p>本週的概念：</p>
+<p>隨機性（我們之前已經討論過幾次了。主要是在以前的練習中。）</p>
+<p>功能（也在上一練習中介紹過）</p>
+<p>主要方法</p>
+<p>主要方法</p>
+<p>由於我們已經涵蓋了隨機性和函數，因此我們仍然需要涵蓋“主”方法的思想。 如果您以前進行過編程，您會想知道為什麼到目前為止在<span>Python</span>代碼中不需要主要方法。</p>
+<p><span> </span></p>
+<p>首先，這是您的操作方法：</p>
+<p>  <strong>def</strong> <strong>square</strong>(num):</p>
+<p>    <strong>return</strong> num <strong>*</strong> num</p>
+<p> </p>
+<p>  <strong>if</strong> __name__<strong>==</strong>"__main__":</p>
+<p>    user_num <strong>=</strong> input("Give me a number: ")</p>
+<p>    <strong>print</strong>(square(num))</p>
+<p>Note that in both __name__ and __main__, there are TWO underscore (_) characters.</p>
+<p>If you run this program, it behaves as expected: asking the use for a number and printing out the square in return. However, you might be wondering - how is this different from the way we’ve been writing programs until this point?</p>
+<p>請注意，在<span>__name__</span>和<span>__main__</span>中，都有兩個下劃線（<span>_</span>）字符。</p>
+<p><span> </span></p>
+<p>如果您運行此程序，它的行為將與預期的一樣：要求使用數字並打印出正方形。 但是，您可能想知道<span>-</span>到目前為止，這與我們編寫程序的方式有何不同？</p>
+<p>  <strong>def</strong> <strong>square</strong>(num):</p>
+<p>    <strong>return</strong> num <strong>*</strong> num</p>
+<p> </p>
+<p>  user_num <strong>=</strong> input("Give me a number: ")</p>
+<p>  <strong>print</strong>(square(num))</p>
+<p>You are correct if you think the second example will have THE SAME BEHAVIOR as in the first case. At least the way we’ve been running Python files until this point. I will attempt to explain.</p>
+<p>Python does not have a specified entry point like many other languages (for example, C++ always looks for a void main() method to run). Python files and programs are executed line by line by the Python interpreter, from however the Python file or program is run. When the definition of a function is reached by the interpreter, the function is not run, but rather loaded to be run later. (We discussed this when we talked about functions in a <span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">previous post</a></span>.) Whatever is written outside of a function will get executed immediately - this includes creating variables and calling the functions that were previously loaded.</p>
+<p>There are (most commonly) two ways to run a Python file:</p>
+<ol>
+<li>“Just running it” (which you can do from the terminal, through the “Run” button in IDLE, etc.)</li>
+<li>Importing the file as a module</li>
+</ol>
+<p>The first way is the way that you most likely have been using if you have been doing the exercises in this blog. If you have many files in a large project, this is how you run the “entry point” file in the project.</p>
+<p>The second way is more subtle: it is what happens when you write an import statement at the top of your file. In this exercise for example, you need to import random into your program to use the random module. Somewhere on your computer there is a file (or a group of Python files) that make up the random module, and in the process of importing them, what you are actually doing is running the file(s) from that module.</p>
+<p>When you have functions defined inside a file (with the def keyword, like the def square function above) and run a file, the function is not immediately run. You can think what happens is the function is stored for future use.</p>
+<p>Anything else in the file - variables created, functions that are called, operations done, etc - are executed immediately when a Python file is run.</p>
+<p>However, in the case where you are importing a Python file into another, you want to load all of the functions without creating variables or executing any functions. You just want to load them to use them later. How do you reconcile this problem? With the if __name__=="__main__" statement. Create your variables and all your functions inside this statement, and when you import your file into another, it will not mess up your program by creating variables or calling functions.</p>
+<p>What the if __name__=="__main__" statement from above does is ensure that variables that are created, functions that are called, operations that are done, etc ONLY when you directly run the file, not when you import it into another.</p>
+<p>如果您認為第二個示例將具有與第一種情況相同的行為，則您是正確的。至少到現在為止，我們一直在運行<span>Python</span>文件的方式。我將嘗試解釋。</p>
+<p><span> </span></p>
+<p><span>Python</span>沒有像許多其他語言一樣具有指定的入口點（例如，<span>C ++</span>始終尋找要運行的<span>void main</span>（）方法）。<span> Python</span>解釋器逐行執行<span>Python</span>文件和程序，但是會運行<span>Python</span>文件或程序。當解釋器到達函數的定義時，該函數不會運行，而是會加載以供以後運行。 （在上一篇文章中討論函數時，我們已經進行了討論。）在函數外部編寫的任何內容都將立即執行<span>-</span>這包括創建變量和調用先前加載的函數。</p>
+<p><span> </span></p>
+<p>有（最常見的）兩種運行<span>Python</span>文件的方式：</p>
+<p><span> </span></p>
+<p>“僅運行它”（您可以從終端通過<span>IDLE</span>中的“運行”按鈕執行此操作，等等）</p>
+<p>將文件導入為模塊</p>
+<p>第一種方法是您在本博客中進行練習時最可能使用的方法。如果大型項目中有許多文件，這就是在項目中運行“入口點”文件的方式。</p>
+<p><span> </span></p>
+<p>第二種方法更加微妙：這是在文件頂部編寫導入語句時發生的。例如，在本練習中，您需要將<span>random</span>導入程序中才能使用<span>random</span>模塊。在計算機上的某個地方，有一個文件（或一組<span>Python</span>文件）組成了隨機模塊，並且在導入它們的過程中，您實際上正在做的是從該模塊運行文件。</p>
+<p><span> </span></p>
+<p>當您在文件內部定義了函數（使用<span>def</span>關鍵字，例如上面的<span>def square</span>函數）並運行文件時，該函數不會立即運行。您可以認為會發生什麼事，該函數已存儲以備將來使用。</p>
+<p><span> </span></p>
+<p>運行<span>Python</span>文件時，文件中的所有其他內容<span>-</span>創建的變量，調用的函數，完成的操作等<span>-</span>都會立即執行。</p>
+<p><span> </span></p>
+<p>但是，在將<span>Python</span>文件導入到另一個文件的情況下，您希望加載所有函數而不創建變量或執行任何函數。您只想加載它們以供以後使用。您如何調和這個問題？使用<span>if __name __ ==</span>“<span> __ main__</span>”語句。在此語句中創建變量和所有函數，並且在將文件導入另一個語句時，它不會通過創建變量或調用函數而使程序混亂。</p>
+<p><span> </span></p>
+<p>上面的<span>if __name __ ==</span>“<span> __ main__</span>”語句的作用是確保僅在直接運行文件時（而不是在將文件導入到另一個文件中時）創建的變量，調用的函數，完成的操作等。</p>
+<p></p>
+<h2><span>Exercise 26</span></h2>
+<p></p>
+<p><strong>Check Tic Tac Toe </strong><strong> </strong></p>
+<p><strong>Exercise 26 (and </strong><span><a href="https://www.practicepython.org/solution/2015/11/23/26-check-tic-tac-toe-solutions.html"><strong>Solution</strong></a></span><strong>)</strong></p>
+<p><em>This exercise is Part 2 of 4 of the Tic Tac Toe exercise series. The other exercises are: </em><span><a href="https://www.practicepython.org/exercise/2014/12/27/24-draw-a-game-board.html"><em>Part 1</em></a></span><em>, </em><span><a href="https://www.practicepython.org/exercise/2015/11/26/27-tic-tac-toe-draw.html"><em>Part 3</em></a></span><em>, and </em><span><a href="https://www.practicepython.org/exercise/2016/08/03/29-tic-tac-toe-game.html"><em>Part 4</em></a></span><em>.</em></p>
+<p>As you may have guessed, we are trying to build up to a full tic-tac-toe board. However, this is significantly more than half an hour of coding, so we’re doing it in pieces.</p>
+<p>Today, we will simply focus on checking whether someone has WON a game of Tic Tac Toe, not worrying about how the moves were made.</p>
+<p>If a game of Tic Tac Toe is represented as a list of lists, like so:</p>
+<p>檢查井字遊戲</p>
+<p>練習<span>26</span>（和解決方案）</p>
+<p>此練習是<span>Tic Tac Toe</span>練習系列<span>4</span>的第<span>2</span>部分。 其他練習是：第<span>1</span>部分，第<span>3</span>部分和第<span>4</span>部分。</p>
+<p><span> </span></p>
+<p>您可能已經猜到了，我們正在努力建立完整的井字遊戲板。 但是，這遠遠超過了半個小時的編碼，因此我們要分批進行。</p>
+<p><span> </span></p>
+<p>今天，我們將只關注檢查某人是否贏得了井字遊戲，而不必擔心這些動作是如何進行的。</p>
+<p><span> </span></p>
+<p>如果井字遊戲被表示為列表列表，例如：</p>
+<p>game <strong>=</strong> [[1, 2, 0],</p>
+<p>      [2, 1, 0],</p>
+<p>      [2, 1, 1]]</p>
+<p>where a 0 means an empty square, a 1 means that player 1 put their token in that space, and a 2 means that player 2 put their token in that space.</p>
+<p>Your task this week: given a 3 by 3 list of lists that represents a Tic Tac Toe game board, tell me whether anyone has won, and tell me which player won, if any. A Tic Tac Toe win is 3 in a row - either in a row, a column, or a diagonal. Don’t worry about the case where TWO people have won - assume that in every board there will only be one winner.</p>
+<p>Here are some more examples to work with:</p>
+<p>其中<span>0</span>表示空白方塊，<span>1</span>表示玩家<span>1</span>將令牌放置在該空間中，而<span>2</span>表示玩家<span>2</span>將令牌放置在該空間中。</p>
+<p><span> </span></p>
+<p>本週的任務：給一個<span>3</span>排<span>3</span>的列表，代表一個<span>Tic Tac Toe</span>遊戲板，告訴我是否有人贏了，告訴我哪個玩家贏了（如果有）。 井字遊戲的勝利是連續<span>3</span>個<span>-</span>連續，一列或對角線。 不必擔心會有兩個人獲勝的情況<span>-</span>假設在每個董事會中只有一個獲勝者。</p>
+<p><span> </span></p>
+<p>以下是一些可以使用的示例：</p>
+<p><span>winner_is_2</span> <span><strong>=</strong></span> <span>[[</span><span>2</span><span>,</span> <span>2</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>1</span><span>]]</span> <span>winner_is_1</span> <span><strong>=</strong></span> <span>[[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>1</span><span>]]</span> <span>winner_is_also_1</span> <span><strong>=</strong></span> <span>[[</span><span>0</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>1</span><span>]]</span> <span>no_winner</span> <span><strong>=</strong></span> <span>[[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>2</span><span>]]</span> <span>also_no_winner</span> <span><strong>=</strong></span> <span>[[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>],</span>      <span>[</span><span>2</span><span>,</span> <span>1</span><span>,</span> <span>0</span><span>]]</span></p>
+<p><strong>Topics</strong></p>
+<p>This exercise is challenging, but doable with only lists (of lists)! Lists of lists are nearly the same as lists, just a bit trickier. Remember that to get the first element in a list called my_list = [5, 10, 15], you index it with a variable like so:</p>
+<p>主題</p>
+<p>此練習具有挑戰性，但僅可使用列表中的列表！ 列表的列表與列表幾乎相同，只是比較棘手。 請記住，要獲取名為<span>my_list = [5</span>，<span>10</span>，<span>15]</span>的列表中的第一個元素，請使用如下所示的變量對其進行索引：</p>
+<p><span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>my_list</span><span>[</span><span>0</span><span>])</span>      <span>5</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>my_list</span><span>[</span><span><strong>-</strong></span><span>1</span><span>])</span>      <span>15</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>len</span><span>(</span><span>my_list</span><span>))</span>      <span>3</span></p>
+<p>When working with lists of lists, it is the same! Say you have a list matrix = [[1, 2], [3, 4]]. Then, take a look at this:</p>
+<p>使用列表列表時，是一樣的！ 假設您有一個列表矩陣<span>= [[1</span>，<span>2]</span>，<span>[3</span>，<span>4]]</span>。 然後，看看這個：</p>
+<p><span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>matrix</span><span>[</span><span>0</span><span>])</span>      <span>[</span><span>1</span><span>,</span> <span>2</span><span>]</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>matrix</span><span>[</span><span><strong>-</strong></span><span>1</span><span>])</span>      <span>[</span><span>3</span><span>,</span> <span>4</span><span>]</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span>first_row</span> <span><strong>=</strong></span> <span>matrix</span><span>[</span><span>0</span><span>]</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>first_row</span><span>[</span><span>0</span><span>])</span>      <span>1</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>matrix</span><span>[</span><span>0</span><span>][</span><span>0</span><span>])</span>      <span>1</span>      <span><strong>&gt;&gt;&gt;</strong></span> <span><strong>print</strong></span><span>(</span><span>matrix</span><span>[</span><span>1</span><span>][</span><span>1</span><span>])</span>      <span>4</span></p>
+<p><span>The cool part is that you can use double-indexing to read the elements from our list of lists matrix! By indexing matrix[0][1] we are saying give me the 1st element of the 0th element of matrix, which in this case is 2.</span></p>
+<p>最酷的部分是您可以使用雙索引從列表列表矩陣中讀取元素！ 通過索引矩陣<span>[0] [1]</span>，我們要給我矩陣第<span>0</span>個元素的第一個元素，在這種情況下為<span>2</span>。</p>
+<p><span> </span></p>
+<p></p>
+<p></p>
 <p></p>
